@@ -9,12 +9,25 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/email"
-        android:hint="Email"
+        android:id="@+id/username"
+        android:hint="User Name"
         android:gravity="center"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
         android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:hint="Email"
+        android:gravity="center"
+        android:layout_marginStart="15dp"
+        android:layout_below="@+id/username"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="25dp"
         android:layout_centerHorizontal="true"
         />
 
@@ -33,31 +46,12 @@
         />
 
     <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_below="@id/password"
-        android:layout_centerHorizontal="true"
-        android:text="Login" />
-
-    <Button
         android:id="@+id/SignUpButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_below="@id/loginButton"
+        android:layout_below="@id/password"
         android:layout_centerHorizontal="true"
         android:text="Sign Up" />
-
-    <Button
-        android:id="@+id/ForgetPasswordButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:background="@null"
-        android:layout_below="@id/SignUpButton"
-        android:layout_centerHorizontal="true"
-        android:text="forgot password" />
 
 </RelativeLayout>
