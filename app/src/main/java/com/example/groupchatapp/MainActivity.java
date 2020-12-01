@@ -93,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+                AlertDialog b = alert.create();
+                //Setting the title manually
+                b.show();
+
             }
         });
 
